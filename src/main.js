@@ -13,12 +13,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 Vue.config.productionTip = false
 
+Vue.use(ElementUI, {locale})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
-  components: { App },
+  router: router,
+  components: {
+    App
+  },
   template: '<App/>'
 })
-
-Vue.use(ElementUI, {locale})
